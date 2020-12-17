@@ -21,6 +21,20 @@ body {
   letter-spacing: 0.03em;
 }
 
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 /*Для сброса*/
 .list {
   list-style: none;
@@ -28,8 +42,12 @@ body {
 }
 
 /*Для скрытия*/
-.title-none {
-  display: none;
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 /*Логотип*/
