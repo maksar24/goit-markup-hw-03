@@ -35,6 +35,13 @@ p {
   margin-bottom: 0;
 }
 
+.container {
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+}
+
 /*Для сброса*/
 .list {
   list-style: none;
@@ -60,6 +67,9 @@ p {
   line-height: 1.19;
 }
 
+.logo.top {
+  margin-right: 93px;
+}
 .logo .blue {
   color: var(--accent-color);
 }
@@ -69,6 +79,25 @@ p {
 }
 
 /*Навигация сайта*/
+.common-nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  display: flex;
+}
+
+.common-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.common-nav .item {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .site-nav .link {
   color: var(--primary-text-color);
 
@@ -86,6 +115,11 @@ p {
 }
 
 /*Контакты в хедере*/
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+}
+
 .contacts-top:hover,
 .contacts-top:focus {
   color: var(--accent-color);
